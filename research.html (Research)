@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research | Yuqian (Sophia) Yang</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">Yuqian (Sophia) Yang</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Research Interests</h1>
+
+      <div class="card">
+        <h2>Perovskite Solar Cells & Photovoltaics</h2>
+        <p>
+          Investigating interfacial modification, crystallization control, and degradation pathways to enhance the power conversion efficiency and operational lifespan of single-junction and tandem perovskite devices.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Electrochemical Carbon Dioxide Reduction ($CO_2RR$)</h2>
+        <p>
+          Designing nanostructured electrocatalysts (e.g., copper-based systems) to convert carbon dioxide into high-value chemical feedstocks and clean fuels with high selectivity and stability.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      &copy; 2026 Yuqian (Sophia) Yang. Hosted on GitHub Pages.
+    </footer>
+  </div>
+</body>
+</html>
