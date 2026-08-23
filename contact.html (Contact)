@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Yuqian (Sophia) Yang</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">Yuqian (Sophia) Yang</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Contact Information</h1>
+      <p>Feel free to reach out for academic collaborations, discussions, or inquiries:</p>
+      
+      <div class="card">
+        <p><strong>Email:</strong> <code>yangnancy13498 [at] gmail [dot] com</code></p>
+        <p><strong>Academic Profiles:</strong></p>
+        <ul>
+          <li><a href="https://scholar.google.com" target="_blank">Google Scholar Profile</a></li>
+          <li><a href="https://orcid.org" target="_blank">ORCID Record</a></li>
+          <li><a href="https://github.com/yangnancy13498-star" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      &copy; 2026 Yuqian (Sophia) Yang. Hosted on GitHub Pages.
+    </footer>
+  </div>
+</body>
+</html>
