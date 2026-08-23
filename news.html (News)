@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News | Yuqian (Sophia) Yang</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">Yuqian (Sophia) Yang</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="news.html" class="active">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Academic News & Updates</h1>
+      <ul>
+        <li><strong>[Aug 2026]</strong> Academic personal website and portfolio launched.</li>
+        <li><strong>[2026]</strong> Latest research findings presented at the international conference.</li>
+      </ul>
+    </main>
+
+    <footer>
+      &copy; 2026 Yuqian (Sophia) Yang. Hosted on GitHub Pages.
+    </footer>
+  </div>
+</body>
+</html>
