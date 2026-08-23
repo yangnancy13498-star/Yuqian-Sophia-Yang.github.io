@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications | Yuqian (Sophia) Yang</title>
+  <meta name="citation_author" content="Yang, Yuqian">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">Yuqian (Sophia) Yang</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html" class="active">Publications</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Selected Publications</h1>
+
+      <div class="pub-item">
+        <div class="pub-title">1. High-Performance and Stable Perovskite Photovoltaic Modules via Interfacial Engineering</div>
+        <div class="pub-authors"><strong>Yuqian Yang</strong>, et al.</div>
+        <div class="pub-venue">Journal of Materials Chemistry / Adv. Mater., 2026.</div>
+        <div class="pub-links">
+          <a href="#">[DOI]</a>
+          <a href="#">[PDF]</a>
+          <a href="#">[BibTeX]</a>
+        </div>
+      </div>
+
+      <!-- 在此直接复制 .pub-item 添加更多论文条目 -->
+
+    </main>
+
+    <footer>
+      &copy; 2026 Yuqian (Sophia) Yang. Hosted on GitHub Pages.
+    </footer>
+  </div>
+</body>
+</html>
