@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuqian (Sophia) Yang | Home</title>
+  <meta name="description" content="Yuqian (Sophia) Yang is a scientific researcher specializing in perovskite solar cells and carbon dioxide reduction electrocatalysis.">
+  <meta name="author" content="Yuqian Yang">
+  <link rel="canonical" href="https://yuqiansophiayang.com/">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">Yuqian (Sophia) Yang</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>About Me</h1>
+      <p>
+        I am a scientific researcher focused on renewable energy and materials science. My current research emphasizes developing high-performance, stable <strong>perovskite solar cells</strong> and exploring catalytic mechanisms for <strong>carbon dioxide reduction</strong>.
+      </p>
+
+      <h2>Curriculum Vitae</h2>
+      <p>For my complete academic and professional trajectory, download my CV:</p>
+      <a href="cv.pdf" class="btn" target="_blank">Download Full CV (PDF)</a>
+    </main>
+
+    <footer>
+      &copy; 2026 Yuqian (Sophia) Yang. Hosted on GitHub Pages.
+    </footer>
+  </div>
+</body>
+</html>
