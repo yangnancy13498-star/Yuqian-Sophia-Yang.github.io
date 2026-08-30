@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    /* Signature Warm Theme Accent */
+    /* 专属学术暖色系与版式 */
     :root {
       --primary-accent: #EE9360;
       --link-color: #b030b0;
@@ -24,7 +24,7 @@
       --border-color: #e5e7eb;
     }
 
-    /* Welcome Banner */
+    /* 顶部欢迎横幅 */
     .welcome-banner {
       text-align: center;
       margin: 1rem 0 2rem 0;
@@ -37,7 +37,7 @@
       letter-spacing: -0.5px;
     }
 
-    /* Two-Column Intro/Bio Section */
+    /* 两栏简介/自述布局 */
     .hero-grid {
       display: grid;
       grid-template-columns: 1fr 270px;
@@ -54,7 +54,7 @@
       margin-bottom: 1.2rem;
     }
 
-    /* Quick Links Bar */
+    /* 快捷外链栏 */
     .social-links {
       font-size: 0.98rem;
       line-height: 1.8;
@@ -71,7 +71,7 @@
       text-decoration: underline;
     }
 
-    /* Sidebar Image & Location */
+    /* 侧边栏个人肖像与机构信息 */
     .profile-sidebar {
       display: flex;
       flex-direction: column;
@@ -94,11 +94,11 @@
       text-align: center;
     }
 
-    /* Timeline Sections (Experience & Education) */
+    /* 时间轴区块（工作经历与教育背景） */
     .section-title {
       font-size: 1.5rem;
       font-weight: 700;
-      color: #3182ce; /* Crisp Academic Blue */
+      color: #3182ce;
       border-bottom: 2px solid var(--border-color);
       padding-bottom: 0.4rem;
       margin-top: 2.5rem;
@@ -135,7 +135,7 @@
       font-style: italic;
     }
 
-    /* Responsive Mobile Layout */
+    /* 移动端自适应 */
     @media (max-width: 768px) {
       .welcome-title {
         font-size: 1.8rem;
@@ -163,7 +163,7 @@
 </head>
 <body>
   <div class="container">
-    <!-- Top Navigation Bar -->
+    <!-- 顶部导航栏 -->
     <nav class="navbar">
       <a href="index.html" class="nav-brand">Yuqian (Sophia) Yang</a>
       <ul class="nav-links">
@@ -176,12 +176,12 @@
     </nav>
 
     <main>
-      <!-- Title Header -->
+      <!-- 欢迎标题 -->
       <div class="welcome-banner">
         <h1 class="welcome-title">Welcome to the Yuqian (Sophia) website!</h1>
       </div>
 
-      <!-- Hero / Bio Section -->
+      <!-- 简介与照片 -->
       <div class="hero-grid">
         <div class="bio-text">
           <p>
@@ -191,7 +191,7 @@
             I have a proven track record of translating lab-scale mechanistic insights into high-performance, stable devices and module-scale systems. Looking ahead, I aim to advance <strong>autonomous self-driving laboratories</strong> and high-throughput materials exploration for next-generation energy and quantum technologies.
           </p>
 
-          <!-- Direct Links -->
+          <!-- 快速链接 -->
           <div class="social-links">
             <strong>Direct Links:</strong>&nbsp;
             <a href="cv.pdf" target="_blank">[CV (PDF)]</a> &nbsp;&bull;&nbsp;
@@ -202,9 +202,9 @@
           </div>
         </div>
 
-        <!-- Sidebar Profile Image -->
+        <!-- 个人照片（已适配你的 prof_pic.jpg.jpg） -->
         <div class="profile-sidebar">
-          <img src="avatar.jpg" alt="Yuqian (Sophia) Yang" class="hero-photo" onerror="this.src='assets/img/prof_pic.jpg'">
+          <img src="prof_pic.jpg.jpg" alt="Yuqian (Sophia) Yang" class="hero-photo" onerror="this.src='prof_pic.jpg'">
           <div class="current-affil">
             <strong>Postdoctoral Researcher</strong><br>
             Department of Physics<br>
@@ -213,7 +213,7 @@
         </div>
       </div>
 
-      <!-- Work Experience Section -->
+      <!-- 工作经历 -->
       <section id="experience">
         <div class="section-title">Work Experience</div>
 
@@ -245,7 +245,7 @@
         </div>
       </section>
 
-      <!-- Education Section -->
+      <!-- 教育经历 -->
       <section id="education">
         <div class="section-title">Education</div>
 
