@@ -4,27 +4,166 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google 站点归属验证标签 -->
+  <!-- Google Verification & SEO -->
   <meta name="google-site-verification" content="mUfwkmuB8YRE8mgpfL25i-Bi2RmB7gscA0pCTp7YsQU" />
-
-  <!-- 网页核心标题：姓名在前，关键词在后 -->
-  <title>Yuqian (Sophia) Yang | Academic Homepage | Perovskite Solar Cells & Energy Materials</title>
-
-  <!-- SEO 关键元数据与搜索词 -->
-  <meta name="description" content="Official academic homepage of Yuqian (Sophia) Yang. Scientific researcher focusing on perovskite solar cells, interfacial engineering, and carbon dioxide reduction electrocatalysis.">
-  <meta name="keywords" content="Yuqian Yang, Sophia Yang, Yuqian Sophia Yang, Yang Yuqian, Perovskite Solar Cells, Photovoltaics, Interfacial Engineering, CO2 Reduction, Electrocatalysis, Materials Science">
+  <title>Yuqian (Sophia) Yang | Home</title>
+  <meta name="description" content="Academic homepage of Yuqian (Sophia) Yang. Experimental materials scientist specializing in photovoltaics, spintronics, and data-driven process optimization.">
+  <meta name="keywords" content="Yuqian Yang, Sophia Yang, Perovskite Solar Cells, Photovoltaics, Spintronics, Machine Learning, Materials Science">
   <meta name="author" content="Yuqian (Sophia) Yang">
-
-  <!-- 告诉 Google 规范网址 -->
   <link rel="canonical" href="https://yuqiansophiayang.com/">
 
-  <!-- Google Scholar 引用索引协议 -->
-  <meta name="citation_author" content="Yang, Yuqian">
-
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Signature Warm Theme Accent */
+    :root {
+      --primary-accent: #EE9360;
+      --link-color: #b030b0;
+      --text-dark: #222222;
+      --text-muted: #555555;
+      --border-color: #e5e7eb;
+    }
+
+    /* Welcome Banner */
+    .welcome-banner {
+      text-align: center;
+      margin: 1rem 0 2rem 0;
+    }
+    .welcome-title {
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: var(--primary-accent);
+      margin: 0;
+      letter-spacing: -0.5px;
+    }
+
+    /* Two-Column Intro/Bio Section */
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 270px;
+      gap: 2.5rem;
+      align-items: start;
+      margin-bottom: 2.5rem;
+    }
+
+    .bio-text p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--text-dark);
+      margin-top: 0;
+      margin-bottom: 1.2rem;
+    }
+
+    /* Quick Links Bar */
+    .social-links {
+      font-size: 0.98rem;
+      line-height: 1.8;
+      margin-top: 1.2rem;
+      padding-top: 0.8rem;
+      border-top: 1px solid var(--border-color);
+    }
+    .social-links a {
+      color: var(--link-color);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sidebar Image & Location */
+    .profile-sidebar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero-photo {
+      width: 100%;
+      max-width: 260px;
+      height: 310px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+      border: 1px solid var(--border-color);
+    }
+    .current-affil {
+      margin-top: 0.9rem;
+      font-size: 0.92rem;
+      color: var(--text-dark);
+      line-height: 1.45;
+      text-align: center;
+    }
+
+    /* Timeline Sections (Experience & Education) */
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #3182ce; /* Crisp Academic Blue */
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.4rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      margin-bottom: 1.4rem;
+      line-height: 1.5;
+    }
+    .timeline-role {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--text-dark);
+    }
+    .timeline-date {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #718096;
+      white-space: nowrap;
+    }
+    .timeline-institution {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      grid-column: 1 / -1;
+      margin-top: 0.15rem;
+    }
+    .timeline-location {
+      font-size: 0.9rem;
+      color: #888888;
+      font-style: italic;
+    }
+
+    /* Responsive Mobile Layout */
+    @media (max-width: 768px) {
+      .welcome-title {
+        font-size: 1.8rem;
+      }
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+      .profile-sidebar {
+        order: -1;
+        margin-bottom: 1.5rem;
+      }
+      .hero-photo {
+        max-width: 220px;
+        height: 270px;
+      }
+      .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+      }
+      .timeline-date {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
+    <!-- Top Navigation Bar -->
     <nav class="navbar">
       <a href="index.html" class="nav-brand">Yuqian (Sophia) Yang</a>
       <ul class="nav-links">
@@ -37,14 +176,97 @@
     </nav>
 
     <main>
-      <h1>About Me</h1>
-      <p>
-        I am a scientific researcher focused on renewable energy and materials science. My current research emphasizes developing high-performance, stable <strong>perovskite solar cells</strong> and exploring catalytic mechanisms for <strong>carbon dioxide reduction</strong>.
-      </p>
+      <!-- Title Header -->
+      <div class="welcome-banner">
+        <h1 class="welcome-title">Welcome to the Yuqian (Sophia) website!</h1>
+      </div>
 
-      <h2>Curriculum Vitae</h2>
-      <p>For my complete academic and professional trajectory, download my CV:</p>
-      <a href="cv.pdf" class="btn" target="_blank">Download Full CV (PDF)</a>
+      <!-- Hero / Bio Section -->
+      <div class="hero-grid">
+        <div class="bio-text">
+          <p>
+            I am an <strong>experimental materials scientist</strong> specializing in <strong>photovoltaics and spintronics</strong>, with core expertise in scalable thin-film deposition, device engineering, and data-driven process optimization. My research bridges automated experimental workflows with machine learning to accelerate materials discovery and establish composition–processing–property relationships.
+          </p>
+          <p>
+            I have a proven track record of translating lab-scale mechanistic insights into high-performance, stable devices and module-scale systems. Looking ahead, I aim to advance <strong>autonomous self-driving laboratories</strong> and high-throughput materials exploration for next-generation energy and quantum technologies.
+          </p>
+
+          <!-- Direct Links -->
+          <div class="social-links">
+            <strong>Direct Links:</strong>&nbsp;
+            <a href="cv.pdf" target="_blank">[CV (PDF)]</a> &nbsp;&bull;&nbsp;
+            <a href="https://scholar.google.com/citations?user=C9EC2TEAAAAJ" target="_blank">[Google Scholar]</a> &nbsp;&bull;&nbsp;
+            <a href="https://orcid.org" target="_blank">[ORCID]</a> &nbsp;&bull;&nbsp;
+            <a href="https://github.com/yangnancy13498-star" target="_blank">[GitHub]</a> &nbsp;&bull;&nbsp;
+            <a href="mailto:yangnancy13498@gmail.com">[Email]</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Profile Image -->
+        <div class="profile-sidebar">
+          <img src="avatar.jpg" alt="Yuqian (Sophia) Yang" class="hero-photo" onerror="this.src='assets/img/prof_pic.jpg'">
+          <div class="current-affil">
+            <strong>Postdoctoral Researcher</strong><br>
+            Department of Physics<br>
+            University at Buffalo, SUNY
+          </div>
+        </div>
+      </div>
+
+      <!-- Work Experience Section -->
+      <section id="experience">
+        <div class="section-title">Work Experience</div>
+
+        <div class="timeline-item">
+          <div class="timeline-role">Postdoctoral Researcher</div>
+          <div class="timeline-date">Jul. 2026 – Present</div>
+          <div class="timeline-institution">
+            Department of Physics, University at Buffalo, SUNY
+            <div class="timeline-location">Buffalo, NY, USA</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-role">Postdoctoral Researcher</div>
+          <div class="timeline-date">Jul. 2024 – Jun. 2026</div>
+          <div class="timeline-institution">
+            Department of Applied Physical Sciences, University of North Carolina at Chapel Hill
+            <div class="timeline-location">Chapel Hill, NC, USA</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-role">Postdoctoral Researcher</div>
+          <div class="timeline-date">Oct. 2021 – Jul. 2024</div>
+          <div class="timeline-institution">
+            Helmholtz-Zentrum Berlin for Materials and Energy (HZB)
+            <div class="timeline-location">Berlin, Germany</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education">
+        <div class="section-title">Education</div>
+
+        <div class="timeline-item">
+          <div class="timeline-role">Ph.D. in Materials Science</div>
+          <div class="timeline-date">Sept. 2016 – Jun. 2021</div>
+          <div class="timeline-institution">
+            College of Materials Science and Engineering, Huaqiao University
+            <div class="timeline-location">Xiamen, China</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-role">B.S. in Applied Chemistry</div>
+          <div class="timeline-date">Sept. 2012 – Jul. 2016</div>
+          <div class="timeline-institution">
+            College of Materials Science and Engineering, Huaqiao University
+            <div class="timeline-location">Xiamen, China</div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
