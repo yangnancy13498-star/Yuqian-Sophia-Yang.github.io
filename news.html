@@ -4,7 +4,155 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News | Yuqian (Sophia) Yang</title>
+  <meta name="description" content="Latest research news, publications, and updates from Yuqian (Sophia) Yang.">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* 专属颜色变量 */
+    :root {
+      --news-orange: #EE9360;   /* 你指定的暖橙色 */
+      --tag-cyan: #00bcd4;      /* 底部标签青色 */
+      --text-main: #222222;
+      --text-muted: #777777;
+    }
+
+    /* 顶部与 Stanford Bao Group 风格一致的渐变 Header */
+    .news-hero-banner {
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+      margin-right: calc(-50vw + 50%);
+      background: linear-gradient(90deg, #d60087 0%, #a824bb 28%, #00c6ff 100%);
+      padding: 3.5rem 2rem;
+      color: #ffffff;
+      box-sizing: border-box;
+      margin-bottom: 2.5rem;
+    }
+    .banner-inner {
+      max-width: 950px;
+      margin: 0 auto;
+    }
+    .banner-inner h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin: 0;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+    }
+
+    /* 两栏主体排版 */
+    .news-layout {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    /* 左侧分类导航条 */
+    .news-categories {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+      padding-top: 0.5rem;
+    }
+    .news-categories a {
+      color: #a824bb;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.15s ease;
+    }
+    .news-categories a:hover {
+      color: #7a158b;
+      text-decoration: underline;
+    }
+
+    /* 右侧新闻列表条目 */
+    .news-feed {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .news-card {
+      display: grid;
+      grid-template-columns: 1fr 150px;
+      gap: 1.8rem;
+      align-items: start;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .news-date {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    /* 橙色主标题 */
+    .news-title {
+      font-size: 1.28rem;
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--news-orange);
+      margin: 0 0 0.8rem 0;
+    }
+    .news-title a {
+      color: var(--news-orange);
+      text-decoration: none;
+    }
+    .news-title a:hover {
+      text-decoration: underline;
+    }
+
+    .news-body {
+      font-size: 0.95rem;
+      color: #444444;
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+    }
+
+    .news-tag {
+      display: inline-block;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--tag-cyan);
+      text-decoration: none;
+    }
+    .news-tag:hover {
+      text-decoration: underline;
+    }
+
+    /* 右侧缩略图 */
+    .news-thumb {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border: 1px solid #eee;
+    }
+
+    /* 移动端适配 */
+    @media (max-width: 768px) {
+      .news-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .news-categories {
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 1rem;
+      }
+      .news-card {
+        grid-template-columns: 1fr;
+      }
+      .news-thumb {
+        max-width: 220px;
+        height: 120px;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -18,13 +166,73 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+  </div>
 
-    <main>
-      <h1>Academic News & Updates</h1>
-      <ul>
-        <li><strong>[Aug 2026]</strong> Academic personal website and portfolio launched.</li>
-        <li><strong>[2026]</strong> Latest research findings presented at the international conference.</li>
-      </ul>
+  <!-- 全宽渐变横幅 -->
+  <header class="news-hero-banner">
+    <div class="banner-inner">
+      <h1>News</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <main class="news-layout">
+      <!-- 左侧分类快速导航 -->
+      <aside class="news-categories">
+        <a href="#highlights">Research Highlights</a>
+        <a href="#updates">Lab &amp; Career News</a>
+        <a href="#media">Presentations</a>
+      </aside>
+
+      <!-- 右侧新闻核心列表 -->
+      <section class="news-feed">
+        
+        <!-- 新闻条目 1 (Science 论文成果) -->
+        <article class="news-card" id="highlights">
+          <div class="news-info">
+            <div class="news-date">August 2026</div>
+            <h2 class="news-title">
+              <a href="publications.html">New paper published in <em>Science</em> on stabilizing perovskite solar modules</a>
+            </h2>
+            <div class="news-body">
+              Our recent collaborative study limiting phosphonic acid interlayer-perovskite reactivity to dramatically enhance module stability has been published in <em>Science</em>.
+            </div>
+            <a href="#highlights" class="news-tag">Research Highlights</a>
+          </div>
+          <img src="prof_pic.jpg.jpg" alt="Research Highlight" class="news-thumb" onerror="this.src='avatar.jpg'">
+        </article>
+
+        <!-- 新闻条目 2 (职业动态 / 入职) -->
+        <article class="news-card" id="updates">
+          <div class="news-info">
+            <div class="news-date">July 2026</div>
+            <h2 class="news-title">
+              <a href="index.html">Joined University at Buffalo (SUNY) as Postdoctoral Researcher</a>
+            </h2>
+            <div class="news-body">
+              Started exciting new research in the Department of Physics at the University at Buffalo focusing on spintronics and data-driven materials engineering.
+            </div>
+            <a href="#updates" class="news-tag">Career News</a>
+          </div>
+          <img src="prof_pic.jpg.jpg" alt="Career News" class="news-thumb" onerror="this.src='avatar.jpg'">
+        </article>
+
+        <!-- 新闻条目 3 (个人主页上线) -->
+        <article class="news-card">
+          <div class="news-info">
+            <div class="news-date">July 2026</div>
+            <h2 class="news-title">
+              <a href="index.html">Official Academic Website Launched</a>
+            </h2>
+            <div class="news-body">
+              Personal research portfolio and comprehensive publication records are now officially live at <code>yuqiansophiayang.com</code>.
+            </div>
+            <a href="#updates" class="news-tag">General News</a>
+          </div>
+          <img src="prof_pic.jpg.jpg" alt="Website Launch" class="news-thumb" onerror="this.src='avatar.jpg'">
+        </article>
+
+      </section>
     </main>
 
     <footer>
