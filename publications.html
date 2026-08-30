@@ -6,6 +6,77 @@
   <title>Publications | Yuqian (Sophia) Yang</title>
   <meta name="citation_author" content="Yang, Yuqian">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* 严格还原学术标杆排版 */
+    .year-header {
+      color: #ff0033;
+      font-size: 1.85rem;
+      font-weight: 800;
+      margin-top: 2.2rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+    }
+    .year-header span.arrow {
+      margin-left: 8px;
+      font-weight: 900;
+      font-size: 1.6rem;
+    }
+
+    .pub-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      counter-reset: pub-counter;
+    }
+
+    .pub-entry {
+      counter-increment: pub-counter;
+      position: relative;
+      padding-left: 2.2rem;
+      margin-bottom: 1.6rem;
+      line-height: 1.7;
+      color: #555555;
+      font-size: 1rem;
+    }
+
+    .pub-entry::before {
+      content: counter(pub-counter) ". ";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #333333;
+      font-weight: 600;
+    }
+
+    /* 亮青蓝色链接与 ↗ 外链符号 */
+    .pub-link {
+      color: #00b4d8;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.15s ease;
+    }
+    .pub-link:hover {
+      color: #0077b6;
+      text-decoration: underline;
+    }
+    .pub-link::after {
+      content: " ↗";
+      font-size: 0.9em;
+    }
+
+    .journal-name {
+      font-weight: 700;
+      color: #333333;
+    }
+
+    .my-name {
+      font-weight: 700;
+      color: #111111;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -21,20 +92,245 @@
     </nav>
 
     <main>
-      <h1>Selected Publications</h1>
-
-      <div class="pub-item">
-        <div class="pub-title">1. High-Performance and Stable Perovskite Photovoltaic Modules via Interfacial Engineering</div>
-        <div class="pub-authors"><strong>Yuqian Yang</strong>, et al.</div>
-        <div class="pub-venue">Journal of Materials Chemistry / Adv. Mater., 2026.</div>
-        <div class="pub-links">
-          <a href="#">[DOI]</a>
-          <a href="#">[PDF]</a>
-          <a href="#">[BibTeX]</a>
-        </div>
+      <!-- 2026 年 -->
+      <div class="year-header">
+        2026 Publications: <span class="arrow">&gt;</span>
       </div>
+      <ol class="pub-list">
+        <li class="pub-entry">
+          C. Fei, Y. Zhang, M. Wang, <span class="my-name">Y. Yang</span>, X. Shi, S. Wang, H. Guo, C. Guo, H. Liu, M. Li, et al., 
+          "<a href="https://doi.org/10.1126/science.adz7969" target="_blank" class="pub-link">Limiting phosphonic acid interlayer--perovskite reactivity to stabilize perovskite solar modules</a>", 
+          <span class="journal-name">Science</span>, 391 (6780), eadz7969, 2026.
+        </li>
+        <li class="pub-entry">
+          <span class="my-name">Y. Yang</span>, X. Shi, A. N. Stein, M. R. Lockett, J. Huang, 
+          "<a href="https://doi.org/10.1002/aenm.202505937" target="_blank" class="pub-link">Understanding Phosphonic-Acid Molecules Based Hole Transport Layers in Perovskite Solar Cells</a>", 
+          <span class="journal-name">Adv. Energy Mater.</span>, 16 (7), e05937, 2026.
+        </li>
+      </ol>
 
-      <!-- 在此直接复制 .pub-item 添加更多论文条目 -->
+      <!-- 2025 年 -->
+      <div class="year-header">
+        2025 Publications: <span class="arrow">&gt;</span>
+      </div>
+      <ol class="pub-list" style="counter-reset: pub-counter 2;">
+        <li class="pub-entry">
+          C. Deng, <span class="my-name">Y. Yang</span>, J. Wu, L. Tan, F. Liu, Y. Du, Q. Chen, X. Chen, L. Sun, W. Sun, et al., 
+          "<a href="https://doi.org/10.1021/acsenergylett.5c00650" target="_blank" class="pub-link">Defect passivation via dual-interface synergistic modulation in perovskite solar cells</a>", 
+          <span class="journal-name">ACS Energy Lett.</span>, 10 (7), 3132-3142, 2025.
+        </li>
+      </ol>
+
+      <!-- 2024 年 -->
+      <div class="year-header">
+        2024 Publications: <span class="arrow">&gt;</span>
+      </div>
+      <ol class="pub-list" style="counter-reset: pub-counter 3;">
+        <li class="pub-entry">
+          <span class="my-name">Y. Yang</span>, Q. Xiong, J. Wu, Y. Tu, T. Sun, G. Li, X. Liu, X. Wang, Y. Du, C. Deng, et al., 
+          "<a href="https://doi.org/10.1002/adma.202310800" target="_blank" class="pub-link">Poly (3-hexylthiophene)/Perovskite Heterointerface by Spinodal Decomposition Enabling Efficient and Stable Perovskite Solar Cells</a>", 
+          <span class="journal-name">Adv. Mater.</span>, 36 (7), 2310800, 2024.
+        </li>
+        <li class="pub-entry">
+          <span class="my-name">Y. Yang</span>, G. Li, L. Zhao, P. Tan, Y. Li, S. Li, L. Tan, C. Deng, S. Wang, Z. Zhao, et al., 
+          "<a href="https://doi.org/10.1002/adma.202311145" target="_blank" class="pub-link">A Catalyst-Like System Enables Efficient Perovskite Solar Cells</a>", 
+          <span class="journal-name">Adv. Mater.</span>, 36 (21), 2311145, 2024.
+        </li>
+        <li class="pub-entry">
+          P. Tan, T. Liu, <span class="my-name">Y. Yang</span>, Y. Chen, Y. Guan, Z. Li, S. Yu, X. Yang, X. Xiang, X. Zhao, et al., 
+          "<a href="https://doi.org/10.1002/adma.202407244" target="_blank" class="pub-link">Flexible Soft X-Ray Image Sensors based on Metal Halide Perovskites With High Quantum Efficiency</a>", 
+          <span class="journal-name">Adv. Mater.</span>, 36 (48), 2407244, 2024.
+        </li>
+        <li class="pub-entry">
+          C. Deng, L. Tan, J. Wu, <span class="my-name">Y. Yang</span>, Y. Du, Q. Chen, X. Chen, L. Sun, F. Yu, W. Sun, et al., 
+          "<a href="https://doi.org/10.1002/aenm.202303387" target="_blank" class="pub-link">Solvation-driven grain boundary passivation improving the performance of perovskite solar cells</a>", 
+          <span class="journal-name">Adv. Energy Mater.</span>, 14 (10), 2303387, 2024.
+        </li>
+        <li class="pub-entry">
+          Z. Zhao, M. Sun, Y. Ji, K. Mao, Z. Huang, C. Yuan, <span class="my-name">Y. Yang</span>, H. Ding, Y. Yang, Y. Li, et al., 
+          "<a href="https://doi.org/10.1021/acs.nanolett.4c00424" target="_blank" class="pub-link">Efficient homojunction tin perovskite solar cells enabled by gradient germanium doping</a>", 
+          <span class="journal-name">Nano Lett.</span>, 24 (18), 5513-5520, 2024.
+        </li>
+        <li class="pub-entry">
+          X. Yang, <span class="my-name">Y. Yang</span>, H. Meng, Y. Li, Q. Hu, 
+          "<a href="https://doi.org/10.1021/acs.jpcc.4c03260" target="_blank" class="pub-link">Temporal Decoupling-Based Machine Learning Framework for Precise Efficiency Prediction in Perovskite Solar Cells</a>", 
+          <span class="journal-name">J. Phys. Chem. C</span>, 128 (29), 11989-11997, 2024.
+        </li>
+      </ol>
+
+      <!-- 2023 年 -->
+      <div class="year-header">
+        2023 Publications: <span class="arrow">&gt;</span>
+      </div>
+      <ol class="pub-list" style="counter-reset: pub-counter 9;">
+        <li class="pub-entry">
+          C. Deng, J. Wu, <span class="my-name">Y. Yang</span>, Y. Du, R. Li, Q. Chen, Y. Xu, W. Sun, Z. Lan, P. Gao, 
+          "<a href="https://doi.org/10.1021/acsenergylett.2c02456" target="_blank" class="pub-link">Modulating residual lead iodide via functionalized buried interface for efficient and stable perovskite solar cells</a>", 
+          <span class="journal-name">ACS Energy Lett.</span>, 8 (1), 666-676, 2023.
+        </li>
+        <li class="pub-entry">
+          G. Li, Y. Hu, M. Li, Y. Tang, Z. Zhang, A. Musiienko, Q. Cao, F. Akhundova, J. Li, K. Prashanthan, et al., 
+          "<a href="https://doi.org/10.1002/ange.202307395" target="_blank" class="pub-link">Managing Excess Lead Iodide with Functionalized Oxo-Graphene Nanosheets for Stable Perovskite Solar Cells</a>", 
+          <span class="journal-name">Angew. Chem.</span>, 135 (39), e202307395, 2023.
+        </li>
+        <li class="pub-entry">
+          X. Ma, X. Hou, P. Tan, M. Ding, X. Zhao, <span class="my-name">Y. Yang</span>, G. Xu, Q. Hu, S. Long, 
+          "<a href="https://doi.org/10.1109/LED.2023.3317711" target="_blank" class="pub-link">Fast speed Ga2O3 solar-blind photodetectors with low temperature process engineering</a>", 
+          <span class="journal-name">IEEE Electron Device Lett.</span>, 44 (11), 1861-1864, 2023.
+        </li>
+      </ol>
+
+      <!-- 2022 年 -->
+      <div class="year-header">
+        2022 Publications: <span class="arrow">&gt;</span>
+      </div>
+      <ol class="pub-list" style="counter-reset: pub-counter 12;">
+        <li class="pub-entry">
+          L. Tan, J. Wu, <span class="my-name">Y. Yang</span>, C. Deng, G. Li, X. Liu, Y. Du, M. Yang, W. Sun, 
+          "<a href="https://doi.org/10.1021/acsaem.2c00652" target="_blank" class="pub-link">4-Hydroxy-2, 2, 6, 6-tetramethylpiperidine as a Bifunctional Interface Modifier for High-Efficiency and Stable Perovskite Solar Cells</a>", 
+          <span class="journal-name">ACS Appl. Energy Mater.</span>, 5 (6), 6754-6763, 2022.
+        </li>
+        <li class="pub-entry">
+          <span class="my-name">Y. Yang</span>, J. Wu, Q. Hu, 
+          "<a href="#" class="pub-link">Tuning energy levels for high V_(OC) in halide perovskite solar cells</a>", 
+          <span class="journal-name">Proceedings of the 9th National Conference on New Solar Materials</span>, 2022.
+        </li>
+      </ol>
+
+      <!-- 2021 年 -->
+      <div class="year-header">
+        2021 Publications: <span class="arrow">&gt;</span>
+      </div>
+      <ol class="pub-list" style="counter-reset: pub-counter 14;">
+        <li class="pub-entry">
+          G. Li, J. Wu, J. Song, C. Meng, Z. Song, X. Wang, X. Liu, <span class="my-name">Y. Yang</span>, D. Wang, Z. Lan, 
+          "<a href="https://doi.org/10.1016/j.jpowsour.2020.228857" target="_blank" class="pub-link">Excellent quinoline additive in perovskite toward to efficient and stable perovskite solar cells</a>", 
+          <span class="journal-name">J. Power Sources</span>, 481, 228857, 2021.
+        </li>
+        <li class="pub-entry">
+          M. Liao, J. Liu, T. Zuo, L. Meng, <span class="my-name">Y. Yang</span>, J. Wu, C. Lu, W. Sun, Y. Xie, 
+          "<a href="https://doi.org/10.1021/acsaem.1c02353" target="_blank" class="pub-link">Defect passivation through cyclohexylethylamine post-treatment for high-performance and stable perovskite solar cells</a>", 
+          <span class="journal-name">ACS Appl. Energy Mater.</span>, 4 (11), 12848-12857, 2021.
+        </li>
+        <li class="pub-entry">
+          Q. Chen, J. Wu, X. Wang, <span class="my-name">Y. Yang</span>, Y. Du, Z. Li, X. Zhang, Z. Zhang, W. Pan, W. Sun, 
+          "<a href="https://doi.org/10.1016/j.elecom.2021.107020" target="_blank" class="pub-link">Spiro-OMeTAD doped with cumene hydroperoxide for perovskite solar cells</a>", 
+          <span class="journal-name">Electrochim. Commun.</span>, 126, 107020, 2021.
+        </li>
+      </ol>
+
+      <!-- 2020 年 -->
+      <div class="year-header">
+        2020 Publications: <span class="arrow">&gt;</span>
+      </div>
+      <ol class="pub-list" style="counter-reset: pub-counter 17;">
+        <li class="pub-entry">
+          <span class="my-name">Y. Yang</span>, J. Wu, X. Wang, Q. Guo, X. Liu, W. Sun, Y. Wei, Y. Huang, Z. Lan, M. Huang, et al., 
+          "<a href="https://doi.org/10.1002/adma.201904347" target="_blank" class="pub-link">Suppressing vacancy defects and grain boundaries via ostwald ripening for high-performance and stable perovskite solar cells</a>", 
+          <span class="journal-name">Adv. Mater.</span>, 32 (7), 1904347, 2020.
+        </li>
+        <li class="pub-entry">
+          Q. Guo, J. Wu, <span class="my-name">Y. Yang</span>, X. Liu, W. Sun, Y. Wei, Z. Lan, J. Lin, M. Huang, H. Chen, et al., 
+          "<a href="https://doi.org/10.1016/j.nanoen.2020.105183" target="_blank" class="pub-link">Low-temperature processed rare-earth doped brookite TiO2 scaffold for UV stable, hysteresis-free and high-performance perovskite solar cells</a>", 
+          <span class="journal-name">Nano Energy</span>, 77, 105183, 2020.
+        </li>
+        <li class="pub-entry">
+          Z. Li, J. Wu, X. Liu, Q. Zhu, <span class="my-name">Y. Yang</span>, Y. Dou, Y. Du, X. Zhang, Q. Chen, W. Sun, et al., 
+          "<a href="https://doi.org/10.1016/j.jallcom.2020.156500" target="_blank" class="pub-link">Highly efficient and stable perovskite solar cells using thionyl chloride as a p-type dopant for spiro-OMeTAD</a>", 
+          <span class="journal-name">J. Alloys Compd.</span>, 847, 156500, 2020.
+        </li>
+        <li class="pub-entry">
+          X. Liu, J. Wu, G. Li, Q. Guo, Z. Song, <span class="my-name">Y. Yang</span>, X. Wang, Z. Lan, J. Lin, 
+          "<a href="https://doi.org/10.1021/acsami.0c00021" target="_blank" class="pub-link">Defect control strategy by bifunctional thioacetamide at low temperature for highly efficient planar perovskite solar cells</a>", 
+          <span class="journal-name">ACS Appl. Mater. Interfaces</span>, 12 (11), 12883-12891, 2020.
+        </li>
+        <li class="pub-entry">
+          P. Yuan, J. Wu, W. Sun, Q. Zhu, M. Zhang, J. Zou, X. Wang, X. Liu, <span class="my-name">Y. Yang</span>, Z. Lan, 
+          "<a href="https://doi.org/10.1002/ente.201901171" target="_blank" class="pub-link">High-Performance Perovskite Solar Cells Using Iodine as Effective Dopant for Spiro-OMeTAD</a>", 
+          <span class="journal-name">Energy Technol.</span>, 8 (5), 1901171, 2020.
+        </li>
+      </ol>
+
+      <!-- 2019 年 -->
+      <div class="year-header">
+        2019 Publications: <span class="arrow">&gt;</span>
+      </div>
+      <ol class="pub-list" style="counter-reset: pub-counter 22;">
+        <li class="pub-entry">
+          <span class="my-name">Y. Yang</span>, J. Wu, X. Liu, Q. Guo, X. Wang, L. Liu, Y. Ding, S. Dai, J.-Y. Lin, 
+          "<a href="https://doi.org/10.1021/acsaem.8b02131" target="_blank" class="pub-link">Dual functional doping of KMnO4 in Spiro-OMeTAD for highly effective planar perovskite solar cells</a>", 
+          <span class="journal-name">ACS Appl. Energy Mater.</span>, 2 (3), 2188-2196, 2019.
+        </li>
+        <li class="pub-entry">
+          Q. Guo, J. Wu, <span class="my-name">Y. Yang</span>, X. Liu, J. Jia, J. Dong, Z. Lan, J. Lin, M. Huang, Y. Wei, et al., 
+          "<a href="https://doi.org/10.1016/j.jpowsour.2019.04.032" target="_blank" class="pub-link">High performance perovskite solar cells based on &beta;-NaYF4: Yb3+/Er3+/Sc3+@NaYF4 core-shell upconversion nanoparticles</a>", 
+          <span class="journal-name">J. Power Sources</span>, 426, 178-187, 2019.
+        </li>
+        <li class="pub-entry">
+          X. Liu, J. Wu, Q. Guo, <span class="my-name">Y. Yang</span>, H. Luo, Q. Liu, X. Wang, X. He, M. Huang, Z. Lan, 
+          "<a href="https://doi.org/10.1039/C9TA02534G" target="_blank" class="pub-link">Pyrrole: an additive for improving the efficiency and stability of perovskite solar cells</a>", 
+          <span class="journal-name">J. Mater. Chem. A</span>, 7 (19), 11764-11770, 2019.
+        </li>
+        <li class="pub-entry">
+          X. Wang, J. Wu, <span class="my-name">Y. Yang</span>, X. Liu, Q. Guo, Z. Song, G. Li, Z. Lan, M. Huang, 
+          "<a href="https://doi.org/10.1039/C9TA03131B" target="_blank" class="pub-link">High performance and stable perovskite solar cells using vanadic oxide as a dopant for spiro-OMeTAD</a>", 
+          <span class="journal-name">J. Mater. Chem. A</span>, 7 (21), 13256-13264, 2019.
+        </li>
+        <li class="pub-entry">
+          Q. Guo, J. Wu, <span class="my-name">Y. Yang</span>, X. Liu, Z. Lan, J. Lin, M. Huang, Y. Wei, J. Dong, J. Jia, et al., 
+          "<a href="https://doi.org/10.34133/2019/8476839" target="_blank" class="pub-link">High-performance and hysteresis-free perovskite solar cells based on rare-earth-doped SnO2 mesoporous scaffold</a>", 
+          <span class="journal-name">Research</span>, 2019, 8476839, 2019.
+        </li>
+        <li class="pub-entry">
+          J. Zou, J. Wu, W. Sun, M. Zhang, X. Wang, P. Yuan, Q. Zhu, J. Yin, X. Liu, <span class="my-name">Y. Yang</span>, 
+          "<a href="https://doi.org/10.1016/j.solener.2019.10.063" target="_blank" class="pub-link">Solvent engineering of LiTFSI towards high-efficiency planar perovskite solar cells</a>", 
+          <span class="journal-name">Solar Energy</span>, 194, 321-328, 2019.
+        </li>
+      </ol>
+
+      <!-- 2018 年 -->
+      <div class="year-header">
+        2018 Publications: <span class="arrow">&gt;</span>
+      </div>
+      <ol class="pub-list" style="counter-reset: pub-counter 28;">
+        <li class="pub-entry">
+          <span class="my-name">Y. Yang</span>, J. Wu, P. Guo, X. Liu, Q. Guo, Q. Liu, H. Luo, 
+          "<a href="https://doi.org/10.1007/s10854-018-9436-1" target="_blank" class="pub-link">Low-temperature sintered SnO2 electron transport layer for efficient planar perovskite solar cells</a>", 
+          <span class="journal-name">J. Mater. Sci.: Mater. Electron.</span>, 29 (15), 13138-13147, 2018.
+        </li>
+        <li class="pub-entry">
+          <span class="my-name">Y. Yang</span>, J. Wu, T. Wu, Z. Xu, X. Liu, Q. Guo, X. He, 
+          "<a href="https://doi.org/10.1016/j.jcis.2018.07.086" target="_blank" class="pub-link">An efficient solvent additive for the preparation of anion-cation-mixed hybrid and the high performance perovskite solar cells</a>", 
+          <span class="journal-name">J. Colloid Interface Sci.</span>, 531, 602-608, 2018.
+        </li>
+        <li class="pub-entry">
+          Z. Xu, J. Wu, <span class="my-name">Y. Yang</span>, Z. Lan, J. Lin, 
+          "<a href="https://doi.org/10.1021/acsaem.8b00698" target="_blank" class="pub-link">High-efficiency planar hybrid perovskite solar cells using indium sulfide as electron transport layer</a>", 
+          <span class="journal-name">ACS Appl. Energy Mater.</span>, 1 (8), 4050-4056, 2018.
+        </li>
+        <li class="pub-entry">
+          H. Luo, J. Wu, X. Liu, <span class="my-name">Y. Yang</span>, Q. Liu, M. Zhang, P. Yuan, W. Sun, Z. Lan, J. Lin, 
+          "<a href="https://doi.org/10.1021/acsaem.8b01511" target="_blank" class="pub-link">Thiourea interfacial modification for highly efficient planar perovskite solar cells</a>", 
+          <span class="journal-name">ACS Appl. Energy Mater.</span>, 1 (12), 6700-6706, 2018.
+        </li>
+        <li class="pub-entry">
+          X. Liu, J. Wu, <span class="my-name">Y. Yang</span>, T. Wu, Q. Guo, 
+          "<a href="https://doi.org/10.1016/j.jpowsour.2018.07.098" target="_blank" class="pub-link">Pyridine solvent engineering for high quality anion-cation-mixed hybrid and high performance of perovskite solar cells</a>", 
+          <span class="journal-name">J. Power Sources</span>, 399, 144-150, 2018.
+        </li>
+      </ol>
+
+      <!-- 2016 年 -->
+      <div class="year-header">
+        2016 Publications: <span class="arrow">&gt;</span>
+      </div>
+      <ol class="pub-list" style="counter-reset: pub-counter 33;">
+        <li class="pub-entry">
+          C. Peng, J. Guo, W. Yang, C. Shi, M. Liu, Y. Zheng, J. Xu, P. Chen, T. Huang, <span class="my-name">Y. Yang</span>, 
+          "<a href="https://doi.org/10.1016/j.jallcom.2015.09.129" target="_blank" class="pub-link">Synthesis of three-dimensional flower-like hierarchical ZnO nanostructure and its enhanced acetone gas sensing properties</a>", 
+          <span class="journal-name">J. Alloys Compd.</span>, 654, 371-378, 2016.
+        </li>
+      </ol>
 
     </main>
 
